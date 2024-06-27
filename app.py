@@ -8,6 +8,11 @@ app.config['SECRET_KEY'] = "secret"
 debug = DebugToolbarExtension(app)
 
 #routes ==> homepage to display stories
+@app.route("/base")
+def base():
+    return render_template("base.html")
+
+
 @app.route("/")
 def homepage():
     return render_template("homepage.html", prompts=stories.story.prompts)
