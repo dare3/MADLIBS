@@ -1,0 +1,10 @@
+.label, input {
+    display: block;
+  }
+
+  body{
+    background-color: beige;
+    display: block;
+    position: relative;
+    
+  }
